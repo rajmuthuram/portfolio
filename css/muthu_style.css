@@ -575,13 +575,22 @@ titl {
 .bg-2 {
 	padding-top: 60px;
     padding-bottom: 60px;
-	background-image: url(../img/banner-bg1.jpg);	
+	background-image: url(../img/banner-bg2.jpg);	
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-3 {
+	padding-top: 60px;
+    padding-bottom: 60px;
+	background-image: url(../img/banner-bg1.jpg);	
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-4 {
 	padding-top: 60px;
     padding-bottom: 60px;
 	background-image: url(../img/contact.jpg);	
@@ -652,7 +661,7 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	border-bottom: 1px solid #FF9800 !important;
     box-shadow: 0 1px 0 0 #FF9800 !important;
 }
-.bg-3 textarea {
+.bg-4 textarea {
     border-bottom: 1px solid #fff !important;
     border: 0px solid #ccc;
     outline: none;
@@ -695,7 +704,7 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 	background-color: #ff9800;
 }
-.bg-3 input[type=text] {
+.bg-4 input[type=text] {
 	border-bottom: 1px solid #fff;
     color: #fff;
     font-size: 18px !important;
@@ -858,6 +867,80 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+
+/* Carousel for text CSS added*/
+.bg-3 .item blockquote strong {
+	font-size: 30px;
+    border-bottom: 1px solid #ff9800;
+    padding-bottom: 5px;
+}
+.bg-3 .item blockquote p {
+    margin-top: 15px;
+}
+.bg-3 .carousel {
+    height: 340px;
+}
+#quote-carousel {
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #fff;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+/*.carousel-inner {
+    min-height: 300px;
+}*/
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
 @media only screen and (min-width : 1349px) {
 	header .bg-1 .col-md-2 {
 		width: 30%;
@@ -865,7 +948,7 @@ svg {
 	header .bg-1 .col-md-5 {
 		width: 35%;
 	}	
-}
+} 
 @media only screen and (max-width : 1200px) {
  
 }

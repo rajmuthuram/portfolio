@@ -942,11 +942,17 @@ svg {
 }
 
 @media only screen and (min-width : 1349px) {
-	header .bg-1 .col-md-2 {
-		width: 30%;
+	header .bg-1 .col-md-7 {
+		width: 65%;
 	}
 	header .bg-1 .col-md-5 {
 		width: 35%;
+	}
+	header .bg-1 .col-md-7 .img-wid {
+		width: 45%;
+	}	
+	header .bg-1 .col-md-7 .txt-wid {
+		width: 55%;
 	}	
 } 
 @media only screen and (max-width : 1200px) {
@@ -968,7 +974,13 @@ svg {
 
 }
 @media only screen and (max-width : 767px) {
-
+	.wid-cntr {
+		width: 75%;
+    	margin: 0 auto;
+	}
+	.exper .col-md-6:nth-child(2) {
+	    border-right: 0px solid #777;
+	}
 }
 @media only screen and (max-width : 600px) {
 
@@ -978,6 +990,9 @@ svg {
 }
 @media only screen and (max-width : 425px) {
  
+	.exper .col-md-6:nth-child(2) {
+	    border-right: 0px solid #777;
+	}
 }
 @media only screen and (max-width : 375px) {
 

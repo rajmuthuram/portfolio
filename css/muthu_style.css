@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 @font-face {
 	font-family: 'ProximaNova-Regular';
 	src: url(../fonts/ProximaNova-Regular.eot);
@@ -438,6 +440,9 @@ html {
 .clr-orng {
 	color: #ff9800;
 }
+.wid15 {
+	width: 15%;
+}
 .wid27 {
 	width: 27%;
 }
@@ -494,7 +499,7 @@ html {
 }
 .kmr-top {
     right: 8%;	
-	top:30px;
+	top:20px;
 }
 .kmr-socl {
 	position: inherit;
@@ -651,6 +656,8 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
     border-bottom: 1px solid #fff !important;
     border: 0px solid #ccc;
     outline: none;
+    font-size: 18px;
+    color: #fff;
  }
 .fb-blue {
 	background-color: #45619d;
@@ -689,7 +696,167 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	background-color: #ff9800;
 }
 .bg-3 input[type=text] {
-	    border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 18px !important;
+}
+
+/*CSS for progress skill bar*/
+
+
+
+.form.kmr-skill h2 {
+  color: #fff;
+  font-size: 28px;
+  padding: 20px;
+  background: rgba(12, 85, 50, 0.5);
+}
+.form.kmr-skill .progress {
+  display: block;
+  padding: 30px 20px;
+  position: relative;
+  color: #ccc;
+  background-color: rgba(255, 255, 255, 0) !important;
+  -webkit-box-shadow: none !important;
+    margin-top: -15px;
+}
+.form.kmr-skill .progress p {
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 999;
+  color: #000;
+}
+.form.kmr-skill .progress p:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 18px;
+  bottom: 2px;
+  right: -25px;
+}
+.form.kmr-skill .progress:nth-of-type(1) > p:after {
+  background: url(http://www.mindk.com/images/icon-html-css-anjular-js-ajax.png) 0 -3px no-repeat;
+  background-size: 80px;
+}
+.form.kmr-skill .progress:nth-of-type(2) > p:after {
+  background: url(http://www.mindk.com/images/icon-html-css-anjular-js-ajax.png) -15px -3px no-repeat;
+  background-size: 80px;
+}
+.form.kmr-skill .progress:nth-of-type(3) > p:after {
+  background: url(http://www.mindk.com/images/icon-html-css-anjular-js-ajax.png) -30px -3px no-repeat;
+  background-size: 80px;
+}
+#css {
+	background-color: red;
+}
+.form.kmr-skill .progress label {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  background: #222;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+  bottom: 3px;
+  position: relative;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 12px;
+}
+.form.kmr-skill .progress label:after {
+  position: relative;
+  content: '';
+  display: block;
+  height: 0px;
+  width: 0px;
+  margin-left: 13px;
+  border-top: 4px solid #222;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.form.kmr-skill progress {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 10px;
+  width: 100%;
+  margin-top: 5px;
+  background: #ccc;
+}
+.form.kmr-skill progress::-webkit-progress-bar {
+  background: #ccc;
+}
+.form.kmr-skill progress::-moz-progress-bar {
+  background: #ff9800;
+}
+.form.kmr-skill progress::-webkit-progress-value {
+  background: #ff9800;
+}
+.view-ninth:hover .mask-2 {
+    transform: rotate(53deg) translateX(-1px) !important;	    
+	-webkit-transform: rotate(53deg) translateX(-1px) !important;
+    -moz-transform: rotate(53deg) translateX(-1px) !important;
+    -o-transform: rotate(53deg) translateX(-1px) !important;
+    -ms-transform: rotate(53deg) translateX(-1px) !important;
+}
+.view-ninth:hover .mask-1 {
+	webkit-transform: rotate(53deg) translateX(1px) !important;
+    -moz-transform: rotate(53deg) translateX(1px) !important;
+    -o-transform: rotate(53deg) translateX(1px !important);
+    -ms-transform: rotate(53deg) translateX(1px) !important;
+    transform: rotate(53deg) translateX(1px) !important;	
+}
+.view.view-ninth img, .view.view-tenth img {
+	width: 100%;
+}
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #eb6363;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #ff9800;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #eb6363;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #ff9800;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #eb6363;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }
 @media only screen and (min-width : 1349px) {
 	header .bg-1 .col-md-2 {

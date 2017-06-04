@@ -5,14 +5,22 @@
 <title>All is Well</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/muthu_style.css" />
 <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style_common.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/style_smk.css" />
-
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript">
+    function fnscrollTop(ID){
+debugger;
+$('html, body').animate({
+    scrollTop: $("#"+ID).offset().top-20
+}, 2000);
+}
+  
+</script>
 </head>
 
 <body>
@@ -21,7 +29,7 @@
 <!--Header Start here -->
 
 <div id="particles-js" class="spider"></div>    
-<header>
+<header id="home">
 	<div class="container">
         <div class="log mrtb20" >
         	<div class="col-md-4">
@@ -33,13 +41,13 @@
                  <i class="fa fa-align-justify" aria-hidden="true"></i>
                 </a>
                 <ul>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Home</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">About Me & Skill</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">My Statistics</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Work Experience</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Certificates & Achievements</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">My Projects</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Contact</i></a></li>
+                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('about');"><a href="#!"><i class="material-icons">Home</i></a></li>
+                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('about');"><a href="#!"><i class="material-icons">About Me & Skill</i></a></li>
+                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('statis');"><a href="#!"><i class="material-icons">My Statistics</i></a></li>
+                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('exper');"><a href="#!"><i class="material-icons">Work Experience</i></a></li>
+                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('certifi');"><a href="#!"><i class="material-icons">Certificates & Achievements</i></a></li>
+                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('project');"><a href="#!"><i class="material-icons">My Projects</i></a></li>
+                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('contact');"><a href="#!"><i class="material-icons">Contact</i></a></li>
                 </ul>
               </div>
           </div>
@@ -105,10 +113,10 @@
 <!--Header end here -->  
 
 <!--section 1 Start here -->    
-<section>
+<section id="about">
 	<div class="container mrtb60">
     	<div class="col-md-12">
-        	<div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+        	<div class="col-md-6 text-justify" data-aos="fade-up" data-aos-duration="1500">
         		<div class="mrbt20"><titl>ABOUT ME</titl></div>
                <txt-titl> Mauris molestie ultrices molestie. Sed rhoncus interdum ipsum, id fermentum sem pellentesque ut.</txt-titl>
 				<div class="sub-txt mrtp15">
@@ -170,8 +178,8 @@
 <!--section 1 end here --> 
 
 <!--section 2 Start here -->    
-<section class="bg-2">
-	<div class="container">
+<section class="bg-2" id="statis">
+	<div class="container" >
     	<div class="col-md-12">
         	<div class="mrbt20 text-center clr-orng"  data-aos="fade-up" data-aos-duration="1500"><titl>MY STATISTICS</titl></div>
 
@@ -208,7 +216,7 @@
 <!--section 2 end here --> 
     
 <!--section 3 Start here -->    
-<section>
+<section id="exper">
 	<div class="container mrtb60">
     	<div class="row text-center fnd12 exper">
         	<div class="col-md-12 mrbt20" data-aos="fade-up" data-aos-duration="1500"><titl>WORK EXPERIENCE</titl></div>
@@ -254,7 +262,7 @@
 <!--section 3 end here -->  
 
 <!--section 4 Start here -->   
-<section class="bg-3">
+<section class="bg-3" id="certifi">
 	<div class="container">
     	<div class="col-md-12">
         	<div class="mrbt20 text-center clr-orng" data-aos="fade-up" data-aos-duration="1500"><titl>Certificates & Achievements</titl></div>
@@ -325,13 +333,13 @@
 <!--section 4 end here --> 
 
 <!--section 5 Start here -->    
-<section>
+<section id="project">
 	<div class="container-fluid mrtb60">
     	<div class="col-md-12">
         	<div class="mrbt20 text-center"><titl>MY PROJECTS</titl></div>
             <div class="main">
                 <!-- NINTH EXAMPLE -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/agribay.png" />
                     <div class="mask mask-1"></div>
@@ -343,7 +351,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/auggeo.png" />
                     <div class="mask">
@@ -353,7 +361,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/bestequipped.png" />
                     <div class="mask mask-1"></div>
@@ -365,7 +373,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/debt_cleanse.png" />
                     <div class="mask">
@@ -375,7 +383,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/develope_script.png" />
                     <div class="mask mask-1"></div>
@@ -387,7 +395,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/herbee.png" />
                     <div class="mask">
@@ -397,7 +405,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/idealfloors.png" />
                     <div class="mask mask-1"></div>
@@ -409,7 +417,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/jaahz.png" />
                     <div class="mask">
@@ -419,7 +427,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/monsterquote.png" />
                     <div class="mask mask-1"></div>
@@ -431,7 +439,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/nafbay.png" />
                     <div class="mask">
@@ -441,7 +449,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/pipe.png" />
                     <div class="mask mask-1"></div>
@@ -453,7 +461,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/security_shift.png" />
                     <div class="mask">
@@ -463,7 +471,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/shop.png" />
                     <div class="mask mask-1"></div>
@@ -475,7 +483,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/sos.png" />
                     <div class="mask">
@@ -485,7 +493,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/thoc.png" />
                     <div class="mask mask-1"></div>
@@ -497,7 +505,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-4">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/topexpert.png" />
                     <div class="mask">
@@ -514,7 +522,7 @@
 <!--section 5 end here --> 
 
 <!--section 6 Start here -->    
-<section class="bg-4">
+<section class="bg-4" id="contact">
 	<div class="container mrtb60">
     <div class="mrbt20 text-center"  data-aos="fade-up" data-aos-duration="1500"><titl class="clr-orng">CONTACT ME</titl></div>
     <form class="col s12">

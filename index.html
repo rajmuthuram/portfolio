@@ -14,7 +14,6 @@
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <script type="text/javascript">
     function fnscrollTop(ID){
-debugger;
 $('html, body').animate({
     scrollTop: $("#"+ID).offset().top-20
 }, 2000);
@@ -41,7 +40,7 @@ $('html, body').animate({
                  <i class="fa fa-align-justify" aria-hidden="true"></i>
                 </a>
                 <ul>
-                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('about');"><a href="#!"><i class="material-icons">Home</i></a></li>
+                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('home');"><a href="#!"><i class="material-icons">Home</i></a></li>
                   <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('about');"><a href="#!"><i class="material-icons">About Me & Skill</i></a></li>
                   <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('statis');"><a href="#!"><i class="material-icons">My Statistics</i></a></li>
                   <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('exper');"><a href="#!"><i class="material-icons">Work Experience</i></a></li>

@@ -5,54 +5,44 @@
 <title>All is Well</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/muthu_style.css" />
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/muthu_style.css" />
 <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style_common.css" />
-<link rel="stylesheet" type="text/css" href="css/style9.css" />
-<link rel="stylesheet" type="text/css" href="css/style10.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style_smk.css" />
 
 </head>
 
 <body>
 	<!--<h1 class="text-center text-uppercase" data-aos="fade-up" data-aos-anchor-placement="center-bottom">muthu</h1>-->
     
-<!--Header Start here -->    
+<!--Header Start here -->
+
+<div id="particles-js" class="spider"></div>    
 <header>
 	<div class="container">
         <div class="log mrtb20" >
         	<div class="col-md-4">
-            	<svg viewBox="0 0 960 150">
-					<symbol id="s-text">
-						<text text-anchor="middle" x="25%" y="80%">Muthu </text>
-					</symbol>
-				
-					<g class = "g-ants">
-						<use xlink:href="#s-text" class="text-copy"></use>
-						<use xlink:href="#s-text" class="text-copy"></use>
-						<use xlink:href="#s-text" class="text-copy"></use>
-						<use xlink:href="#s-text" class="text-copy"></use>
-						<use xlink:href="#s-text" class="text-copy"></use>
-					</g>
-				</svg>
-                </div>
-                <div class="col-md-6">
+                <img src="img/muthu-logo.png">
+            </div>
+            <div class="col-md-6">
                 <div class="fixed-action-btn toolbar kmr-top">
                 <a class="btn-floating btn-large orange">
                  <i class="fa fa-align-justify" aria-hidden="true"></i>
                 </a>
                 <ul>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
-                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Home</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">About Me & Skill</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">My Statistics</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Work Experience</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Certificates & Achievements</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">My Projects</i></a></li>
+                  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">Contact</i></a></li>
                 </ul>
               </div>
-          	</div>
+          </div>
             <div class="clearfix"></div>
         </div>
         <div class="col-md-12 bg-1 pdtb30 clr-f">
@@ -72,12 +62,6 @@
                   <li><a class="btn-floating blue"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 </ul>
               </div>
-              <h1>
-                  <a href="" class="typewrite fnt20 clr-f" data-period="3000" 
-                  data-type='[ "I am a web Designer", "I Love Design", "I Love to Develop" ]'>
-                    <span class="wrap"></span>
-                  </a>
-                </h1>
 
             </div>
             <div class="col-md-6 pdlf0 txt-wid text-justify wid-cntr" data-aos="fade-left" data-aos-duration="1500">
@@ -182,36 +166,42 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 <!--section 1 end here --> 
 
 <!--section 2 Start here -->    
 <section class="bg-2">
 	<div class="container">
     	<div class="col-md-12">
-        	<div class="mrbt20 text-center clr-orng"><titl>MY STATISTICS</titl></div>
+        	<div class="mrbt20 text-center clr-orng"  data-aos="fade-up" data-aos-duration="1500"><titl>MY STATISTICS</titl></div>
+
+            <!-- <div class="progress bg-barr">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+            </div> -->
             <div class="col-md-4 col-xs-4 text-center educate">
                 <h3 class="years">Secured 66%</h3>
-                <div class="educate-in">
-                	<img src="img/school-icon.png" class="img-responsive" />
+                <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+                    <a href="#" class="hi-icon "><img src="img/school-icon.png" class="img-responsive"></a>
                 </div>
                 <h5>S.S.L.C During 2006-2007</h5>
             </div>
             <div class="col-md-4 col-xs-4 text-center educate">
                 <h3 class="years">Secured 82%</h3>
-                <div class="educate-in">
-                	<img src="img/school-icon2.png" class="img-responsive" />
+                <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+                    <a href="#" class="hi-icon "><img src="img/school-icon2.png" class="img-responsive"></a>
                 </div>
                 <h5>H.S.C During 2008-2009</h5>
             </div>
             <div class="col-md-4 col-xs-4 text-center educate">
                 <h3 class="years">Secured 72%</h3>
-                <div class="educate-in">
-                	<img src="img/colg_icon.png" class="img-responsive" />
+                <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+                    <a href="#" class="hi-icon "><img src="img/colg_icon.png" class="img-responsive"></a>
                 </div>
                 <h5>B.E (CSE) During 2009-2013</h5>
-            </div> 
-            
+            </div>
+
+
+
         </div>
     </div>   
 </section>
@@ -223,32 +213,36 @@
     	<div class="row text-center fnd12 exper">
         	<div class="col-md-12 mrbt20" data-aos="fade-up" data-aos-duration="1500"><titl>WORK EXPERIENCE</titl></div>
         	<div class="col-md-6">
-            	<div class="wrk-exp">
-                <span><i class="fa fa-envelope" aria-hidden="true"></i></span></div>
+            	<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a wrk-exp">
+                    <a href="#" class="hi-icon hi-icon-locked"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
                 <div class="sub-txt">
                 	<h3>Ut dapibus nisi turpis</h3>
                     <p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
                 </div>
             </div>
             <div class="col-md-6">
-            	<div class="wrk-exp">
-                <span><i class="fa fa-comments" aria-hidden="true"></i></span></div>
+                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a wrk-exp">
+                    <a href="#" class="hi-icon hi-icon-locked"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
                 <div class="sub-txt">
                 	<h3>Ut dapibus nisi turpis</h3>
                     <p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
                 </div>
             </div>
             <div class="col-md-6">
-            	<div class="wrk-exp">
-                <span><i class="fa fa-comments" aria-hidden="true"></i></span></div>
+                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a wrk-exp">
+                    <a href="#" class="hi-icon hi-icon-locked"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
                 <div class="sub-txt">
                 	<h3>Ut dapibus nisi turpis</h3>
                     <p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-            	<div class="wrk-exp">
-                <span><i class="fa fa-comments" aria-hidden="true"></i></span></div>
+            <div class="col-md-6"> 
+                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a wrk-exp">
+                    <a href="#" class="hi-icon hi-icon-locked"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
                 <div class="sub-txt">
                 	<h3>Ut dapibus nisi turpis</h3>
                     <p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
@@ -337,6 +331,7 @@
         	<div class="mrbt20 text-center"><titl>MY PROJECTS</titl></div>
             <div class="main">
                 <!-- NINTH EXAMPLE -->
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/agribay.png" />
                     <div class="mask mask-1"></div>
@@ -347,6 +342,8 @@
                         <a href="https://auctionsoftwaremarketplace.com:3083" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/auggeo.png" />
                     <div class="mask">
@@ -355,6 +352,8 @@
                         <a href="http://auctionsoftwaremarketplace.com:9393" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/bestequipped.png" />
                     <div class="mask mask-1"></div>
@@ -365,6 +364,8 @@
                         <a href="http://bestequipped.moblearn.net/homes" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/debt_cleanse.png" />
                     <div class="mask">
@@ -373,6 +374,8 @@
                         <a href="http://debtcleanse.moblearn.net" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/develope_script.png" />
                     <div class="mask mask-1"></div>
@@ -383,6 +386,8 @@
                         <a href="http://www.developscripts.com" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/herbee.png" />
                     <div class="mask">
@@ -391,6 +396,8 @@
                         <a href="http://auctionsoftwaremarketplace.com/design/Herbiespro/index.html" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/idealfloors.png" />
                     <div class="mask mask-1"></div>
@@ -401,6 +408,8 @@
                         <a href="http://www.idealfloors.com" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/jaahz.png" />
                     <div class="mask">
@@ -409,6 +418,8 @@
                         <a href="http://jaahz.moblearn.net" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/monsterquote.png" />
                     <div class="mask mask-1"></div>
@@ -419,6 +430,8 @@
                         <a href="http://monsterquote.moblearn.net" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/nafbay.png" />
                     <div class="mask">
@@ -427,6 +440,8 @@
                         <a href="http://auctionsoftwaremarketplace.com:6002/" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/pipe.png" />
                     <div class="mask mask-1"></div>
@@ -437,6 +452,8 @@
                         <a href="http://www.pipemarket.com/" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/security_shift.png" />
                     <div class="mask">
@@ -445,6 +462,8 @@
                         <a href="https://shifttracking.com/" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/shop.png" />
                     <div class="mask mask-1"></div>
@@ -455,6 +474,8 @@
                         <a href="https://shop.auctionsoftware.com" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/sos.png" />
                     <div class="mask">
@@ -463,6 +484,8 @@
                         <a href="https://auctionsoftwaremarketplace.com:3083" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-ninth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/thoc.png" />
                     <div class="mask mask-1"></div>
@@ -473,6 +496,8 @@
                         <a href="https://auctionsoftwaremarketplace.com:7019" class="info" target="_blank">See me</a>
                     </div>
                 </div>
+                </div>
+                <div class="col-md-3">
                 <div class="view view-tenth" data-aos="fade-up" data-aos-duration="1500">
                     <img src="img/topexpert.png" />
                     <div class="mask">
@@ -480,6 +505,7 @@
                         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                         <a href="http://topexpert.moblearn.net/" class="info"  target="_blank">See me</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -489,8 +515,8 @@
 
 <!--section 6 Start here -->    
 <section class="bg-4">
-	<div class="container mrtb60"  data-aos="fade-up" data-aos-duration="1500">
-    <div class="mrbt20 text-center"><titl class="clr-orng">CONTACT ME</titl></div>
+	<div class="container mrtb60">
+    <div class="mrbt20 text-center"  data-aos="fade-up" data-aos-duration="1500"><titl class="clr-orng">CONTACT ME</titl></div>
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -528,6 +554,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <script src="js/muthu_js.js"></script> 
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stats.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>	
 

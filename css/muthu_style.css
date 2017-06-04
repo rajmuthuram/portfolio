@@ -538,6 +538,12 @@ txt-titl {
 txt-titl p {
 	padding-top: 16px;
 }
+.fixed-action-btn.toolbar ul li a {
+    font-size: 17px !important;
+}
+header .fixed-action-btn {
+    z-index: 9999;
+}
 .kmr-btn, .kmr-btn:hover, .kmr-btn:focus {
     border-radius: 0 !important;
     font-size: 15px;
@@ -569,8 +575,10 @@ txt-titl p {
     padding: 8px;
 }
 titl {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
 }
 .bg-2 {
 	padding-top: 60px;
@@ -606,7 +614,7 @@ titl {
     width: 130px;
     height: 130px;
     margin: 0 auto;
-    background: #ff9800;
+    border: 5px solid #ff9800;
     padding: 18px;
     border-radius: 50%;	
     display: flex;
@@ -639,15 +647,17 @@ titl {
     min-height: 350px;
     padding: 40px 50px;
 }
-.wrk-exp span {
+.wrk-exp a {
     width: 130px;
     height: 130px;
     margin: 0 auto;
-	font-size: 60px;
-    border: 1px solid #ff9800;
+	font-size: 50px;
+	border-radius: 0px !important;
+    border: 3px solid #ff9800;
 	display: flex;
+    color: #ff9800;
 }
-.wrk-exp span i {
+.wrk-exp a i {
 	margin: auto;
 }
 input[type=text].validate+label, .input-field label {
@@ -825,48 +835,6 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 .view.view-ninth img, .view.view-tenth img {
 	width: 100%;
 }
-svg {
-    display: block;
-    font: 10.5em 'Montserrat';
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-    stroke: #eb6363;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #ff9800;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #eb6363;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #ff9800;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #eb6363;
-	animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}
 
 /* Carousel for text CSS added*/
 .bg-3 .item blockquote strong {
@@ -923,7 +891,7 @@ svg {
     width: 128px;
     height: 128px;
     border-radius: 100px;
-    border-color: #f33;
+    border-color: #ff9800;
     opacity: 1;
     overflow: hidden;
 }
@@ -940,7 +908,22 @@ svg {
     float: left;
     margin-right: 10px;
 }
-
+.bg-barr .progress-bar {
+    background-color: #ff9800 !important;
+}
+.progress.bg-barr {
+	width: 70%;
+    left: 15%;
+    top: 63%;
+    position: absolute;
+    height: 13px;
+}
+.spider {
+	position: absolute;
+    top: 0;
+    background: none !important;
+    min-height: 810px;
+}
 @media only screen and (min-width : 1349px) {
 	header .bg-1 .col-md-7 {
 		width: 65%;

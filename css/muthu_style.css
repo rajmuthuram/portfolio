@@ -632,6 +632,7 @@ titl {
 .educate h5 {
     color: #fff;
     font-size: 18px;
+    line-height: 1.6;
 }
 .exper .col-md-6:nth-child(2) {
 	border-right: 1px solid #777;
@@ -806,9 +807,9 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
   border: none;
   border-radius: 3px;
   overflow: hidden;
-  height: 10px;
+  height: 6px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
   background: #ccc;
 }
 .form.kmr-skill progress::-webkit-progress-bar {
@@ -821,18 +822,18 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
   background: #ff9800;
 }
 .view-ninth:hover .mask-2 {
-    transform: rotate(53deg) translateX(-1px) !important;	    
-	-webkit-transform: rotate(53deg) translateX(-1px) !important;
-    -moz-transform: rotate(53deg) translateX(-1px) !important;
-    -o-transform: rotate(53deg) translateX(-1px) !important;
-    -ms-transform: rotate(53deg) translateX(-1px) !important;
+    transform: rotate(52deg) translateX(-1px) !important;	    
+	-webkit-transform: rotate(52deg) translateX(-1px) !important;
+    -moz-transform: rotate(52deg) translateX(-1px) !important;
+    -o-transform: rotate(52deg) translateX(-1px) !important;
+    -ms-transform: rotate(52deg) translateX(-1px) !important;
 }
 .view-ninth:hover .mask-1 {
-	webkit-transform: rotate(53deg) translateX(1px) !important;
-    -moz-transform: rotate(53deg) translateX(1px) !important;
-    -o-transform: rotate(53deg) translateX(1px !important);
-    -ms-transform: rotate(53deg) translateX(1px) !important;
-    transform: rotate(53deg) translateX(1px) !important;	
+	webkit-transform: rotate(52deg) translateX(1px) !important;
+    -moz-transform: rotate(52deg) translateX(1px) !important;
+    -o-transform: rotate(52deg) translateX(1px !important);
+    -ms-transform: rotate(52deg) translateX(1px) !important;
+    transform: rotate(52deg) translateX(1px) !important;	
 }
 .view.view-ninth img, .view.view-tenth img {
 	width: 100%;

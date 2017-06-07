@@ -18,6 +18,7 @@
 body {
     font-family: 'ProximaNova-Regular' !important;
 	/*font-family: 'Lobster', cursive;*/
+	/*font-family: 'Righteous', cursive;*/
 }
 
 html {
@@ -577,8 +578,9 @@ header .fixed-action-btn {
 titl {
     font-size: 26px;
     font-weight: 400;
-    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 .bg-2 {
 	padding-top: 60px;
@@ -927,6 +929,12 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
     background: none !important;
     min-height: 810px;
 }
+.dis-non {
+	display: none;
+}
+
+/*Media responsive style Start here*/
+
 @media only screen and (min-width : 1349px) {
 	header .bg-1 .col-md-7 {
 		width: 65%;
@@ -957,14 +965,30 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 
 }
 @media only screen and (max-width : 768px) {
-
+	.phot {
+	    width: 50%;
+	}
+	.kmr-btn.wid75.mrtp30 {
+	    width: 50%;
+	}
+	.kmr-socl {
+	    right: 17%;
+	}
+	.bg-1 .col-md-7.pdlf0 {
+		padding-right: 0px;
+	}
 }
 @media only screen and (max-width: 767px) {
+	
+	.dis-non {
+		display: block;
+	}
+	
 	#exper .mrtb60 {
 	    margin-bottom: 0px !important;
 	}
 	.wid-cntr {
-		width: 75%;
+		width: 93%;
     	margin: 0 auto;
 	    padding-left: 0;
 	    padding-right: 0;
@@ -994,6 +1018,36 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 
 }
 @media only screen and (max-width : 480px) {
+	.bg-3 .col-md-12 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.kmr-socl .btn-floating.btn-large {
+	    width: 45px;
+	    height: 45px;
+	}
+	.kmr-socl .btn-floating.btn-large i {
+	    line-height: 48px;
+	}
+	.kmr-socl .btn-floating i {
+	    font-size: 18px !important;
+	}
+	.fixed-action-btn.horizontal ul {
+	    right: 52px;
+	    top: 37%;
+	}
+	.phot {
+	    width: 75%;
+	}
+	.kmr-btn.wid75.mrtp30 {
+	    width: 75%;
+	}
+	.kmr-socl {
+	    right: 0%;
+	}
+	.bg-1 .kmr-info h5, .sub-txt {
+	    line-height: 24px
+	}
   	.exper .sub-txt p {
   		text-align: justify;
   	}

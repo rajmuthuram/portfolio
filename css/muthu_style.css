@@ -960,6 +960,9 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 
 }
 @media only screen and (max-width: 767px) {
+	#exper .mrtb60 {
+	    margin-bottom: 0px !important;
+	}
 	.wid-cntr {
 		width: 75%;
     	margin: 0 auto;
@@ -969,12 +972,42 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	.exper .col-md-6:nth-child(2) {
 	    border-right: 0px solid #777;
 	}
+	.exper .col-md-6:nth-child(4) {
+	    border-right: 0px solid #777;
+	    border-bottom: 1px solid #777;
+	}
 }
 @media only screen and (max-width : 600px) {
+	#quote-carousel .carousel-indicators {
+	    right: 50%;
+	    top: auto;
+	    bottom: 35px;
+	}
+	#quote-carousel .carousel-indicators .active {
+	    width: 90px;
+	    height: 90px;
+	}
+	#quote-carousel .carousel-indicators li {
+	    width: 30px;
+	    height: 30px;
+	}
 
 }
 @media only screen and (max-width : 480px) {
-  
+  	.exper .sub-txt p {
+  		text-align: justify;
+  	}
+  	#quote-carousel .carousel-indicators .active {
+	    width: 70px;
+	    height: 70px;
+	}
+	#quote-carousel .carousel-indicators li {
+	    width: 20px;
+	    height: 20px;
+	}
+	.bg-3 .item blockquote p {
+	    font-size: 15px;
+	}
 }
 @media only screen and (max-width : 425px) {
  	

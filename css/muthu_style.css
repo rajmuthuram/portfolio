@@ -979,6 +979,9 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	}
 }
 @media only screen and (max-width: 767px) {
+	.container {
+	    width: 100%;
+	}
 	
 	.dis-non {
 		display: block;
@@ -1018,6 +1021,13 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 
 }
 @media only screen and (max-width : 480px) {
+	.log .col-md-4 {
+		text-align: center;	
+	}
+	.log img {
+	    width: 60%;
+	    margin: 0 auto;	
+	}
 	.bg-3 .col-md-12 {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -1068,10 +1078,29 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	.exper .col-md-6:nth-child(2) {
 	    border-right: 0px solid #777;
 	}
+	.bg-4 .wid15 {
+	    width: 100%;
+	}
+	[data-aos='fade-left'][data-aos-duration='1500'] {
+		transform: inherit !important;
+	}
 }
 @media only screen and (max-width : 375px) {
+	.view a.info {
+	    margin-top: -25px;
+	}
 
 }
 @media only screen and (max-width : 320px) {
-
+	.kmr-socl .btn-floating i {
+	    font-size: 16px !important;
+	    line-height: 33px;
+	}
+	.fixed-action-btn.horizontal.kmr-socl ul li {
+	    margin: 14px 9px 0 0;
+	}
+	.btn-floating {
+	    width: 32px;
+	    height: 32px;
+	}
 }

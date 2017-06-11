@@ -1089,7 +1089,14 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	}
 }
 @media only screen and (max-width : 425px) {
- 	
+ 	.fixed-action-btn.toolbar ul li a {
+	    font-size: 12px !important;
+    	line-height: 45px;
+	}
+	.log .fixed-action-btn.toolbar {
+	    padding: 0;
+	    height: 45px;
+	}
 	.exper .col-md-6:nth-child(2) {
 	    border-right: 0px solid #777;
 	}

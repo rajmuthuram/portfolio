@@ -717,7 +717,7 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 	background-color: #ff9800;
 }
-.bg-4 input[type=text] {
+.bg-4 input[type=text], .bg-4 input[type=email] {
 	border-bottom: 1px solid #fff;
     color: #fff;
     font-size: 18px !important;
@@ -728,8 +728,6 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 }
 
 /*CSS for progress skill bar*/
-
-
 
 .form.kmr-skill h2 {
   color: #fff;
@@ -937,6 +935,16 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	display: none;
 }
 
+.kmr-pop {
+	height: 25% !important;
+    transform: scaleX(1) !important;
+ }
+.pop-in {
+	    text-align: center;
+    margin-top: 5%;
+    font-size: 16px;
+    color: #ff9800;
+}
 /*Media responsive style Start here*/
 
 @media only screen and (min-width : 1349px) {

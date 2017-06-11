@@ -44,10 +44,10 @@ $('html, body').animate({
                 <ul>
                   <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('home');"><a href="#!"><i class="material-icons">Home</i></a></li>
                   <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('about');"><a href="#!"><i class="material-icons">About Me & Skill</i></a></li>
-                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('statis');"><a href="#!"><i class="material-icons">My Statistics</i></a></li>
+                  <li class="waves-effect waves-light" onclick="javascript:fnscrollTop('statis');"><a href="#!"><i class="material-icons">Statistics</i></a></li>
                   <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('exper');"><a href="#!"><i class="material-icons">Work Experience</i></a></li>
                   <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('certifi');"><a href="#!"><i class="material-icons">Certificates</i></a></li>
-                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('project');"><a href="#!"><i class="material-icons">My Projects</i></a></li>
+                  <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('project');"><a href="#!"><i class="material-icons">Projects</i></a></li>
                   <li class="waves-effect waves-light"  onclick="javascript:fnscrollTop('contact');"><a href="#!"><i class="material-icons">Contact</i></a></li>
                 </ul>
               </div>
@@ -576,18 +576,12 @@ $('html, body').animate({
     </div>
   </div>
    </form>
-
   <!-- Customise the Thankyou Message People See when they submit the form: -->
 
-
-  <!-- Modal Structure -->
-  <div class="modal modal-fixed-footer" style="display:none;" id="thankyou_message">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+  <!-- Modal Structure -->  
+  <div class="modal modal-fixed-footer kmr-pop" style="display:none;" id="thankyou_message">
+    <div class="pop-in">
+        Your Message has been successfully sent
     </div>
   </div>
 
@@ -612,5 +606,6 @@ $('html, body').animate({
     $('.modal').modal();
   });
 </script>
+<!-- <div class="modal-overlay" id="materialize-modal-overlay-1"></div> -->
 </body>
 </html>

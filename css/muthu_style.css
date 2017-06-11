@@ -722,6 +722,10 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
     color: #fff;
     font-size: 18px !important;
 }
+.bg-4 input[type=email].valid {
+	border-bottom: 1px solid #4CAF50;
+    box-shadow: 0 1px 0 0 #4CAF50;
+}
 
 /*CSS for progress skill bar*/
 

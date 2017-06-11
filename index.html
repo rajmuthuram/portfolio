@@ -537,41 +537,62 @@ $('html, body').animate({
 </section>
 <!--section 5 end here --> 
 
-<!--section 6 Start here -->    
+<!--section 6 Start here -->  
+ 
 <section class="bg-4" id="contact">
+<form id="gform" method="POST" 
+  action="https://script.google.com/macros/s/AKfycbwqBDaYJneQI2EGA-SdBuRjv_B0AsTuk1k3eEjXUVT40GZ7qK4/exec">
+
 	<div class="container mrtb60">
     <div class="mrbt20 text-center"  data-aos="fade-up" data-aos-duration="1500"><titl class="clr-orng">CONTACT ME</titl></div>
-    <form class="col s12">
+    <div class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate fnt16">
-          <label for="last_name"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Full Name</label>
+          <input id="name" name="name" type="text" class="validate fnt16">
+          <label for="name"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Full Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate fnt16">
-          <label for="last_name"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Phone Number</label>
+          <input id="phone" name="phone" type="text" class="validate fnt16">
+          <label for="Phone"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Phone Number</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate fnt16 ">
-          <label for="last_name"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; Email ID</label>
+          <input id="email" name="email" type="email" class="validate fnt16 ">
+          <label for="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; Email ID</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate fnt16">
-          <label for="last_name"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Subject</label>
+          <input id="Subject" name="subject" type="text" class="validate fnt16">
+          <label for="Subject"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Subject</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea  for="last_name" class="hit140 style-1c "></textarea>
-          <label for="last_name"><i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp; Message</label>
+          <textarea  for="message" id="message" name="message" class="hit140 style-1c "></textarea>
+          <label for="message"><i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp; Message</label>
         </div>
       </div>
-      <div class="mrtp50"><a class="waves-effect waves-light btn orange bdrr0 wid15">Send</a></div>
-    </form>
+      <div class="mrtp50"><button  class="waves-effect waves-light btn orange bdrr0 wid15">Send</button></div>
+    </div>
   </div>
+   </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+
+
+  <!-- Modal Structure -->
+  <div class="modal modal-fixed-footer" style="display:none;" id="thankyou_message">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
+
 </section>
+
 <!--section 6 end here --> 
 
 
@@ -583,7 +604,13 @@ $('html, body').animate({
 <script src="js/stats.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>	
-
-
+ <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<script type="">
+     $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
 </body>
 </html>

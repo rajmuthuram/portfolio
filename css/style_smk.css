@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
 }
 #particles-js canvas {
-  background-color: rgba(103, 103, 103, 0.43);  
-  height: 103.3% !important;
+    background-color: rgba(103, 103, 103, 0.43);
+    height: 103.3% !important;
 }
 /* NINTH EXAMPLE*/
 .view-ninth .mask-1, .view-ninth .mask-2 {

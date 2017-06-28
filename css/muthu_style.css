@@ -1131,6 +1131,10 @@ input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
 	.kmr-btn.wid75.mrtp30 {
 	    width: 75%;
 	}
+	.downld {
+		color: #fff;
+    	text-decoration: none;		
+	}
 	.kmr-socl {
 	    right: 0%;
 	}
